@@ -1,0 +1,18 @@
+:host {
+    display: block;
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 16px;
+        .card {
+            width: 80%;
+            .upgrade {
+                font-size: 24px;
+            }
+            .btn-row {
+                justify-content: flex-start;
+            }
+        }
+    }
+}

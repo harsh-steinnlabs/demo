@@ -1,0 +1,33 @@
+:host {
+    button {
+        font-size: 14px;
+    }
+    .modal-header {
+        label {
+            color: orange;
+            font-size: 24px
+        }
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cross {
+            font-size: 24px;
+            color: red;
+            cursor: pointer;
+        }
+    }
+    .modal-footer {
+        display: flex;
+        justify-content: center;
+        button {
+            border-radius: 5px;
+        }
+    }
+    .modal-body {
+        .row {
+            &:hover {
+                background: lightgray;
+            }
+        }
+    }
+}

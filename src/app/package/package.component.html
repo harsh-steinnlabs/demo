@@ -1,0 +1,37 @@
+<div class="container">
+  <div class="current-package card">
+    <div class="heading">Package</div>
+    <div class="content">
+      <div class="row">
+        <div class="col">
+          <label for="">Current</label>
+          <label class="selected">Gold Package</label>
+        </div>
+        <div class="col">
+          <div>Gold Package</div>
+          <div class="gray">Ex date : 02.02.2017</div>
+          <div class="light-cyan-color">Upgrade</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container" *ngFor="let item of packageList">
+  <div class="package card">
+    <div class="content">
+      <div class="row">
+        <div class="col d-flex align-center">
+          <label (click)="goToDetails(item.key)">{{item.name}}</label>
+          <img src="{{item.image}}" alt="" width="30">
+        </div>
+        <div class="col">
+          <div class="gray">Online : {{item.online}}</div>
+          <div class="gray">Offline : {{item.offline}}</div>
+        </div>
+        <div class="col">
+          <div> <span class="gray">Expire : </span>{{item.expiryDate}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

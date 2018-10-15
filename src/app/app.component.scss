@@ -1,0 +1,12 @@
+:host {
+    .container {
+        display: flex;
+        justify-content: space-between;
+        .sidebar {
+            width: 20%;
+        }
+        .page {
+            width: 80%;
+        }
+    }
+}

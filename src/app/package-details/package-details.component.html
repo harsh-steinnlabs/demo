@@ -1,0 +1,102 @@
+<div class="container">
+  <div class="current-package card">
+    <div class="heading">Packages</div>
+    <div class="content">
+      <div class="row">
+        <div class="col">
+          <label>Current</label>
+          <label class="selected">{{currentPackage.name}}</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="package card">
+    <div class="heading">Currently Package</div>
+    <div class="content">
+      <div class="row">
+        <div class="col">
+          <div>
+            <fa name="briefcase"></fa>
+            {{currentPackage.type}}
+          </div>
+        </div>
+        <div class="col">
+          <div>Annual Fee</div>
+          <div>{{currentPackage.price}}</div>
+        </div>
+        <div class="col">
+          <div class="light-cyan-color d-flex align-center">
+            <span class="material-icons">thumb_up</span>
+            Upgrade Package</div>
+        </div>
+      </div>
+      <div class="row bg-light-gray">
+        <div class="col">Online</div>
+        <div class="col">{{currentPackage?.online}}</div>
+        <div class="col">{{currentPackage?.expiry}}</div>
+      </div>
+      <div class="row bg-light-gray">
+        <div class="col">Offline</div>
+        <div class="col">{{currentPackage?.offline}}</div>
+        <div class="col">{{currentPackage?.expiry}}</div>
+      </div>
+      <div class="btn-row row">
+        <button class="primary-btn">Gold</button>
+        <button class="primary-btn">Silver</button>
+        <button class="primary-btn">Platinum</button>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="vertical-card">
+            <div class="heading">Package Name</div>
+            <div class="card-row">
+              <img src="../../assets/package-icon.png" alt="No-image" width="200">
+            </div>
+            <div class="card-row">
+              <label>
+                500 min 200$ 3 months
+              </label>
+            </div>
+            <div class="card-row d-flex align-center justify-content-center">
+              <button class="secondary-btn" (click)="upgradePackage()">Upgrade Package</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="vertical-card">
+            <div class="heading">Package Name</div>
+            <div class="card-row">
+              <img src="../../assets/package-icon.png" alt="No-image" width="200">
+            </div>
+            <div class="card-row">
+              <label>
+                500 min 200$ 3 months
+              </label>
+            </div>
+            <div class="card-row d-flex align-center justify-content-center">
+              <button class="secondary-btn" (click)="upgradePackage()">Upgrade Package</button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="vertical-card">
+            <div class="heading">Package Name</div>
+            <div class="card-row">
+              <img src="../../assets/package-icon.png" alt="No-image" width="200">
+            </div>
+            <div class="card-row">
+              <label>
+                500 min 200$ 3 months
+              </label>
+            </div>
+            <div class="card-row d-flex align-center justify-content-center">
+              <button class="secondary-btn" (click)="upgradePackage()">Upgrade Package</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
